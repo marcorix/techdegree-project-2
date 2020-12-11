@@ -1,0 +1,313 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #f6f6f6;
+    color: rgb(70, 70, 70);
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: rgb(70, 70, 70);
+    text-align: center;
+}
+a:hover {
+    color: rgb(116, 115, 115);
+}
+
+p {
+    color: rgb(135, 135, 135);
+}
+
+h3 {
+    margin: 1em 0;
+}
+h4 {
+    font-weight: lighter;
+    margin-bottom: 2em;
+   
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-transform: uppercase;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+    margin-bottom: .5em;
+}
+.name a {
+     font-family: 'Russo One', sans-serif;
+     color: #F78460;
+}
+
+.main-nav a {
+    background-color: rgb(255, 255, 255);
+    padding: .8em 0;
+    font-weight: bold;
+}
+
+.main-nav li {
+    display: block;
+    margin-bottom: .3em;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.main-header {
+    margin-top: 1em;
+    ;
+}
+
+.banner {
+     text-align: center;
+     padding-bottom: 1.5em;
+     margin-top: 3em;
+     
+}
+
+.banner img {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1.8em;
+}
+
+#portfolio {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 1em;
+}
+
+.main-footer {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    
+    
+}
+
+.main-footer h5 {
+    float: left;
+}
+
+.main-footer a {
+    float: right;
+    font-size: small;
+    font-weight: bold;
+
+}
+
+
+/* ---- Page Elements ---- */
+
+.hide {
+    display: none;
+}
+
+.content {
+    margin-bottom: 2.5em;
+}
+.content p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.content img  {
+    width: 100%;
+}
+
+.section-title {
+    padding: 2em 0;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 100%;
+    margin: 3em auto 0;
+    height: 1px;
+    background-color: rgb(213, 213, 213);
+}
+
+/* ================================= 
+  Media Queries min-width: 768px
+==================================== */
+
+
+
+@media (min-width: 768px) {
+
+/* ---- Navigation ---- */
+
+    .main-nav a {
+        background-color: transparent;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin: 1em;
+    }
+   
+
+/* ---- Layout Containers ---- */
+
+.container {
+        width: 90%;
+    }
+
+.main-header {
+        text-align: center;
+    }
+
+    .banner img {
+        float: right;
+        width: 40%;
+    }
+    .bio {
+        float: right;
+        text-align: left;
+        font-size: 1.3em;
+        width: 60%;
+        padding-right: 1em;
+    }
+    #contact p {
+        font-size: 1.2em;
+    }
+    #contact h4 {
+        font-size: 1.2em;
+        width: 70%;
+        margin: 0 auto 3em;
+    }
+    
+    .footer-nav a {
+        font-size: small;
+    }
+    .footer-nav {
+        
+        float: right;
+    }
+    
+    .footer-nav li {
+        float: left;
+        margin-left: 2em;
+    }
+
+    /* ---- Page Elements ---- */
+    .hide2 {
+        display: none;
+    }
+    .hide {
+        display: initial;
+    }
+
+    .col {
+        float: left;
+        width: 50%;
+    }
+
+    .content img {
+        width: 95%;
+        
+    } 
+
+    .content {
+        margin-bottom: 3em;
+    }  
+    
+  }
+
+
+/* ================================= 
+  Media Queries min-width: 1024px
+==================================== */
+
+
+@media (min-width: 1024px) {
+
+    /* ---- Navigation ---- */
+    
+        .name {
+            float: left;
+            
+        }
+        .main-nav {
+            float: right;
+            padding-top: .2em;
+        }
+     
+        .banner {
+            clear: both;
+            margin-top: 0;
+        }
+
+        .main-nav a {
+            background-color: transparent;
+        }
+    
+        .main-nav li {
+            display: inline-block;
+            margin: 0 0 0 1.5em;
+        }
+       
+    /* ---- Layout Containers ---- */
+    
+        .main-header {
+            margin-top: 2em;
+            margin-bottom: 1.5em;
+        }
+        
+        .col {
+            float: left;
+            width: 33.3%;
+            
+        }  
+        
+    
+        /* ---- Page Elements ---- */
+  
+      }
+
+
+
+
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
